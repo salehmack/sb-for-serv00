@@ -29,6 +29,9 @@ generate_config() {
         "password": "${UUID}"
       }],
       "congestion_control": "bbr",
+      "auth_timeout": "10s",
+      "zero_rtt_handshake": false,
+      "heartbeat": "10s",
       "tls": {
         "enabled": true,
         "alpn": [
