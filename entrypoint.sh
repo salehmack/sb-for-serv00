@@ -29,7 +29,6 @@ generate_config() {
         "password": "${UUID}"
       }],
       "congestion_control": "bbr",
-      "network": "tcp",
       "tls": {
         "enabled": true,
         "alpn": [
