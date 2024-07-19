@@ -110,6 +110,7 @@ generate_config() {
         "domain_keyword": [
           "chatgpt",
           "openai",
+	  "ip.sb",
           "netflix"
         ]
       },
