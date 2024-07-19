@@ -29,8 +29,7 @@ generate_config() {
         "password": "${UUID}"
       }],
       "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "udp_over_stream": false,
+      "network": "tcp",
       "tls": {
         "enabled": true,
         "alpn": [
