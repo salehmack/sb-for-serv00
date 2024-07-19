@@ -35,7 +35,7 @@ generate_config() {
       "tls": {
         "enabled": true,
         "alpn": [
-          "h3"
+          "h2"
         ],
         "certificate_path": "${WORKDIR}/cert.crt",
         "key_path": "${WORKDIR}/private.key"
