@@ -89,15 +89,15 @@ generate_config() {
     {
       "type": "wireguard",
       "tag": "wireguard-out",
-      "server": "162.159.193.10",
-      "server_port": 1701,
+      "server": "162.159.192.83",
+      "server_port": 2506,
       "local_address": [
         "172.16.0.2/32",
-        "2606:4700:110:8b82:7e66:1cc9:db92:fbf6/128"
+        "2606:4700:110:8955:22c1:c194:3dce:566a/128"
       ],
-      "private_key": "kAKpn/A4Rrhi1RvdKuFKurxWh2vYbZPHZQ/HlFFuwGE=",
+      "private_key": "AO0QxuKA+ZvJzjoJlq6PMc5z5+h3jX1nVb1W4SHQvnc=",
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [110, 229, 36]
+      "reserved": [110, 214, 172]
     },
     {
       "type": "block",
@@ -174,7 +174,7 @@ EOF
 }
 
 get_singbox(){
-  wget https://raw.githubusercontent.com/k0baya/sb-for-serv00/main/sing-box -O ${WORKDIR}/sing-box && chmod +x ${WORKDIR}/sing-box
+  wget https://raw.githubusercontent.com/salehmack/sb-for-serv00/main/sing-box -O ${WORKDIR}/sing-box && chmod +x ${WORKDIR}/sing-box
 }
 
 mkdir -p ${WORKDIR}
