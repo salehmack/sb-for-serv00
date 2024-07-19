@@ -133,7 +133,7 @@ EOF
         
 tuic5配置：
         
-tuic://${UUID}:${UUID}@${HOST}:${TUIC5PORT}//?congestion_control=bbr&udp_relay_mode=native&sni=${DOMAIN}&alpn=h3#🇵🇱PL-tuic5-k0baya-serv00
+tuic://${UUID}:${UUID}@${HOST}:${TUIC5PORT}//?congestion_control=bbr&udp_relay_mode=native&sni=${DOMAIN}&alpn=h2#🇵🇱PL-tuic5-k0baya-serv00
         
 ----------------------------
         
