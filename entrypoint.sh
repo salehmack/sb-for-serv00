@@ -73,7 +73,7 @@ generate_config() {
       ],
       "private_key": "AO0QxuKA+ZvJzjoJlq6PMc5z5+h3jX1nVb1W4SHQvnc=",
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [110,214,172]
+      "reserved": [110, 214, 172]
     },
     {
       "type": "block",
