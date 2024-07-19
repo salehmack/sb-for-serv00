@@ -5,7 +5,7 @@
 
 * 无需自备域名，使用 Serv00 自带的域名实现 TLS ；
 
-* 同时支持 Hysteria2、Tuic5 和 Trojan 三协议；
+* 同时支持 Tuic5 和 Trojan 协议；
 
 * JS 定时保活核心
 
@@ -28,7 +28,6 @@
 右键点击 `start.sh` 文件，选择 View/Edit > Source Editor ，进行编辑，在 1 - 7 行修改环境变量：
 |变量名|是否必须|默认值|备注|
 |-|-|-|-|
-|HY2PORT|是||Hysteria2 协议监听端口（使用 UDP）|
 |TUIC5PORT|是||Tuic5 协议监听端口（使用 UDP）|
 |TRPORT|是||Trojan 协议监听端口（使用 TCP）|
 |SERV00PASSWORD|是||你的 Serv00 账号的密码，用于获取 SSL 证书|
