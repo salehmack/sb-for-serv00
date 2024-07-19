@@ -1,5 +1,4 @@
 #!/bin/bash
-HY2PORT=${HY2PORT:-'20000'}
 TUIC5PORT=${TUIC5PORT:-'20001'}
 TRPORT=${TRPORT:-'20002'}
 SERV00PASSWORD=${SERV00PASSWORD:-'password'}
@@ -19,28 +18,6 @@ generate_config() {
     "timestamp": true
   },
   "inbounds": [{
-      "type": "hysteria2",
-      "sniff": true,
-      "sniff_override_destination": true,
-      "tag": "hy2-sb",
-      "listen": "::",
-      "listen_port": ${HY2PORT},
-      "up_mbps": 900,
-      "down_mbps": 360,
-      "users": [{
-        "password": "${UUID}"
-      }],
-      "ignore_client_bandwidth": false,
-      "tls": {
-        "enabled": true,
-        "alpn": [
-          "h3"
-        ],
-        "certificate_path": "${WORKDIR}/cert.crt",
-        "key_path": "${WORKDIR}/private.key"
-      }
-    },
-    {
       "type": "tuic",
       "sniff": true,
       "sniff_override_destination": true,
@@ -150,12 +127,6 @@ EOF
         rm -rf ~/sing-box/list
         cat > ~/sing-box/list << EOF
 *******************************************
-        
-hy2配置：
-        
-hysteria2://${UUID}@${HOST}:${HY2PORT}/?sni=${DOMAIN}#🇵🇱PL-hy2-k0baya-serv00
-        
-----------------------------
         
 tuic5配置：
         
